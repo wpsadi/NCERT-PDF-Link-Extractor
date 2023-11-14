@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "NCERT PDF LINK",
+    "version": "0.0.1",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_icon" : "./logo.png",
+      "default_popup": "index.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["scrpt.js"]
+      }
+    ]
+  }
+  
